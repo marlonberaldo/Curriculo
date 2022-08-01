@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/sunset-svgrepo-com.svg">
+
+    <title>Currículo | Marlon Beraldo</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a class="cabecalho__button botao-ativo" aria-label="Menu"><i></i></a>
+        <a href="#" class="cabecalho__logo"><img src="img/sunset-svgrepo-com.svg" alt="Logo"
+                class="cabecalho__logo-img"></a>
+        <ul class="cabecalho__lista">
+            <a href="#" class="cabecalho__menu cabecalho__home"> Home </a>
+            <a href="#sobre" class="cabecalho__menu cabecalho__nos"> Sobre</a>
+            <a href="#contate-nos" class="cabecalho__menu cabecalho__produtos"> Contato</a>
+            <button onclick="darkMode()"><img src="img/lua_1.svg" alt="lua mudanca de tema"
+                    class="imagem__darkmode"></button>
+        </ul>
+
+    </header>
+
+    <nav class="menu-lateral">
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo"> Home</a>
+        <a href="#sobre" class="menu-lateral__link menu-lateral__link--nos"> Sobre</a>
+        <a href="#contate-nos" class="menu-lateral__link menu-lateral__link--produtos"> Contato</a>
+        <button onclick="darkMode()"><img src="img/lua_1.svg" alt="lua mudanca de tema"
+                class="imagem__darkmode"></button>
+
+    </nav>
+
+    <main class="menu">
+        <section class="textao grid-template-areas-1" id="textao">
+            <h3 class="textao__titulo grid_1"> Marlon Beraldo</h3>
+            <div class="grid_pequeno">
+                <img src="  img/eu (1).jpg" alt="Minha foto" class="foto_perfil">
+            </div>
+            <div class="textao__conteudo grid_2">
+                <div class="sobre" id="sobre">
+                    <h3 class="titulo__sobre">
+                        Sobre
+                    </h3>
+                    <p class="conteudo__sobre">Acadêmico de Engenharia de Computação - UEPG, entusiasta da
+                        tecnologia e
+                        skatista nas horas vagas.
+                        À procura de recursos e conhecimentos na área da tecnologia, sempre buscando maior evolução
+                        nos
+                        âmbitos da vida.
+                    </p>
+                </div>
+                <div class="formacao">
+                    <h3 class="titulo__sobre">
+                        Formação
+                    </h3>
+                    <ul class="conteudo__formacao">
+                        <li class="lista__formacao">
+                            <p class="instituicao">Instuto Federal do Paraná - IFPR</p>
+                            <p class="instituicao__curso">Técnico em Agroecologia (2015 - 2018)</p>
+                        </li>
+                        <li class="lista__formacao">
+                            <p class="instituicao">Universidade Estadual de Ponta Grossa - UEPG</p>
+                            <p class="instituicao__curso">Engenharia de Computação (2020 - atual)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="textao__conteudo_2 grid_3">
+                <h3 class="titulo__competencias">
+                    Competências
+                </h3>
+                <ul class="conteudo__competencias">
+                    <li class="compt ">
+                        <h4 class="compt__titulo css-html"> CSS: Básico ao Avançado</h4>
+                        <p class="compt_dados">Posicionamento, flexbox e flexgrid</p>
+                    </li>
+                    <li class="compt">
+                        <h4 class="compt__titulo front"> Design Front-End</h4>
+                        <p class="compt_dados">Formulários, listas e navegação <br>Responsividade/Mobile First</p>
+                    </li>
+                    <li class="compt">
+                        <h4 class="compt__titulo logica"> Lógica de Programação</h4>
+                        <p class="compt_dados">Aulas de Programação vistas na graduação: <br> POO em Java, C
+                        </p>
+                    </li>
+                    <li class="compt">
+                        <h4 class="compt__titulo js"> JavaScript</h4>
+                        <p class="compt_dados">Programando na linguagem WEB</p>
+                        <p class="compt_dados">Programação Orientada a Objetos</p>
+                    </li>
+                    <li class="compt">
+                        <h4 class="compt__titulo react"> React</h4>
+                        <p class="compt_dados">Desenvolvendo com JavaScript</p>
+                        <p class="compt_dados">Componentização, props, map </p>
+                    </li>
+                    <li class="compt">
+                        <h4 class="compt__titulo git"> Github</h4>
+                        <p class="compt_dados">Versionamento de códigos</p>
+                        <p class="compt_dados">Git e Github</p>
+                    </li>
+
+                </ul>
+                <div class="linkes">
+                    <a href="https://cursos.alura.com.br/user/marlon-beraldo/fullCertificate/880594ec4a2a3acf825a6af039d9c890"
+                        class="certificados" target="_blank">Confira os certificados aqui</a>
+                    <a href="https://github.com/marlonberaldo" target="_blank"><img
+                            src="img/redes/github-svgrepo-com.svg" alt="Logo github" class="github"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="identidade grid_ID" id="identidade">
+            <div class="mapa">
+                <h3 class="titulo__mapa"> Onde me encontro? </h3>
+                <p class="info__moradia">
+                    Devido à faculdade, atualmente resido em Ponta Grossa no
+                    Condomínio Vittace - Uvaranas. Contudo, alterno entre Ponta Grossa e Imbituva.
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14454.047533704663!2d-50.11811045507811!3d-25.084528064078757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81b8b2b594127%3A0x68cab838c2199740!2sVittace%20Uvaranas!5e0!3m2!1spt-BR!2sbr!4v1656979043702!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </section>
+
+        <form action="https://api.sheetmonkey.io/form/ju1H3jNPnXtUeXE1YTbYBF" class="formulario grid_form"
+            id="contate-nos" method="post">
+            <h3>Contate-me para mais informações</h3>
+            <input type="text" placeholder="Nome" name="name" class="name" autocomplete="off" required>
+            <input type="email" placeholder="Email" name="email" class="email" autocomplete="off" required>
+            <button type="submit">
+                Enviar
+            </button>
+            <p class="ps">
+                PS.: Formulário funcional
+            </p>
+            <p class="pos_form">
+                Entraremos em contato o mais breve possível! Acesse também minhas <a href="#redes-sociais">redes
+                    sociais.</a>
+            </p>
+        </form>
+
+    </main>
+
+    <footer class="rodape">
+        <img src="img/sunset-svgrepo-com.svg" alt="logo" class="logo__rodape">
+        <ul class="redes-sociais" id="redes-sociais">
+            <li class="redes">
+                <a href="https://www.instagram.com/marlon_beraldo/" target="_blank">
+                    <img src="img/redes/insta rosa.svg">
+                </a>
+            </li>
+            <li class="redes">
+                <a href="https://wa.me/5542999721435" target="_blank">
+                    <img src="img/redes/whatsapp-svgrepo-com.svg">
+                </a>
+            </li>
+            <li class="redes">
+                <a href="https://www.linkedin.com/in/marlon-beraldo-67499820b/" target="_blank">
+                    <img src="img/redes/linkedin-svgrepo-com.svg">
+                </a>
+            </li>
+        </ul>
+        <p class="direitos">&copy; Copyright MarlonB.DEV - 2022</p>
+
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

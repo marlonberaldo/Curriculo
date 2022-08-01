@@ -1,0 +1,636 @@
+:root {
+    --preto-fundo: #15191C;
+    --cinza-secundario: #95999C;
+    --rosa: #a51987;
+    --branco: #ffffff;
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(/icones.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    transition: 1s ease-in-out;
+}
+
+.dark-mode {
+    background-color: var(--preto-fundo);
+    color: var(--branco);
+    transition: 0.6s ease-in-out;
+}
+
+.imagem__darkmode {
+    width: 40px;
+    height: 40px;
+    background-color: var(--preto-fundo);
+}
+
+
+/* CABECALHO */
+
+.cabecalho {
+    background-color: var(--preto-fundo);
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.cabecalho__logo-img {
+    width: 50px;
+}
+
+.cabecalho__menu {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.cabecalho__home::before {
+    content: "\e902";
+    font-size: 1em;
+}
+
+.cabecalho__produtos::before {
+    content: "\e900";
+    font-size: 1em;
+}
+
+.cabecalho__nos::before {
+    content: "\2665";
+}
+
+.cabecalho__menu:hover {
+    color: #fff;
+}
+
+.cabecalho__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-lateral,
+.botao-ativo {
+    display: none;
+}
+
+.cabecalho__button i::before {
+    content: "\e904";
+    font-size: 2em;
+    color: var(--branco);
+}
+
+.menu__botao {
+    width: 500px;
+}
+
+.menu-lateral__link {
+    text-decoration: none;
+    color: var(--cinza-secundario);
+    text-transform: uppercase;
+}
+
+.cabecalho__lista button {
+    margin: 0;
+    padding: 0;
+    background-color: var(--preto-fundo);
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho__lista button:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.imagem__darkmode {
+    background-color: var(--preto-fundo);
+    width: 25px;
+    height: 25px;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.textao {
+    display: grid;
+    padding-top: 2em;
+}
+
+.textao__titulo {
+    font-size: 5em;
+    grid-area: grid_1;
+    margin: 2em 0;
+    text-align: center;
+    text-shadow: 2px 2px var(--cinza-secundario);
+}
+
+.textao__conteudo {
+    justify-content: space-around;
+    grid-area: grid_2;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 2em;
+    border-radius: 20px;
+    box-shadow: 0 5px 1em;
+    padding: 2em;
+    scroll-margin: 3em;
+}
+
+.conteudo__sobre,
+.conteudo__formacao {
+    font-size: 0.8em;
+    padding: 1em;
+    text-align: center;
+    color: var(--cinza-secundario);
+}
+
+.textao__conteudo_2 {
+    grid-area: grid_2;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 2em;
+    border-radius: 20px;
+    box-shadow: 0 5px 1em;
+    padding: 2em;
+}
+
+.sobre {
+    scroll-margin: 6em;
+}
+
+.textao__conteudo_2 {
+    grid-area: grid_3;
+}
+
+.grid_pequeno {
+    font-size: 2em;
+    text-align: center;
+    /* margin: 2em 2em;
+    border-radius: 20px;
+    box-shadow: 0 5px 1em; */
+    padding: 1em;
+    grid-area: grid_pequeno;
+}
+
+.foto_perfil {
+    margin-top: 3em;
+    width: 20vw;
+    border-radius: 20px;
+    transition: 0.5s ease-out;
+}
+
+.conteudo__formacao {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.lista__formacao {
+    text-align: center;
+    margin: 1em;
+    font-size: 0.8em;
+}
+
+.instituicao {
+    font-weight: 700;
+}
+
+.titulo__competencias {
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+.conteudo__competencias {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* .compt__titulo::first-letter {
+    color: rgba(165, 25, 135, 0.7)
+} */
+
+.compt_dados {
+    color: #95999C;
+    font-size: 0.8em;
+}
+
+.compt {
+    list-style: none;
+    padding: 1em 0;
+}
+
+.linkes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s all;
+}
+
+.certificados {
+    margin: 1em;
+    text-decoration: none;
+    color: #6b6e71;
+    transition: 0.3s all;
+}
+
+.compt__titulo {
+    padding-bottom: 4px;
+}
+
+.css-html::before {
+    content: url("../img/css.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+.js::before {
+    content: url("../img/js.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+.front::before {
+    content: url("../img/html.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+.logica::before {
+    content: url("../img/logica.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+.react::before {
+    content: url("../img/react.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+.git::before {
+    content: url("../img/github.svg");
+    display: inline-block;
+    width: 30px;
+}
+
+/* DISPOSICAO DOS GRIDS */
+
+.grid-template-areas-1 {
+    grid-template-areas:
+        "grid_1 grid_1 grid_pequeno"
+        "grid_2 grid_2 grid_2"
+        "grid_3 grid_3 grid_3"
+        "grid_form grid_form grid_form "
+        "grid_ID grid_ID grid_ID"
+    ;
+}
+
+/* IDENTIDADE */
+
+.identidade {
+    grid-area: grid_ID;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 2em;
+    border-radius: 20px;
+    box-shadow: 0 5px 1em;
+    padding: 2em;
+}
+
+.titulo__mapa {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+}
+
+.info__moradia {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    color: var(--cinza-secundario);
+}
+
+.mapa iframe {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    font-size: 2em;
+    text-align: center;
+    margin: 2em;
+    border-radius: 20px;
+    box-shadow: 0 5px 1em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: grid_form;
+    scroll-margin: 3em;
+}
+
+.formulario h3 {
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.formulario input {
+    width: 50vw;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 20px;
+    box-shadow: 0 5px 1em;
+    padding: 0.125em
+}
+
+.formulario button {
+    font-weight: bold;
+    font-size: 18px;
+    width: 50vw;
+    height: 10vh;
+    margin-top: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 5px 0.5em;
+    background: radial-gradient(#0f9af0, #05466f);
+}
+
+.pos_form {
+    color: var(--cinza-secundario);
+    font-size: 0.5em;
+    margin: 2em;
+}
+
+.pos_form a {
+    text-decoration: none;
+    color: var(--rosa);
+}
+
+.ps {
+    color: var(--cinza-secundario);
+    margin-top: 0.8em;
+    font-size: 0.4em;
+}
+
+/* RODAPE */
+.logo__rodape {
+    padding: 3em;
+    width: 100px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--preto-fundo);
+    box-sizing: border-box;
+}
+
+.redes-sociais {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.redes-sociais li {
+    transition: 0.5s all;
+}
+
+.redes {
+    width: 10vh;
+    list-style: none;
+    padding: 0 2em;
+}
+
+.direitos {
+    font-size: 22px;
+    color: var(--rosa);
+    margin: 2em 0;
+}
+
+/* @s */
+@media screen and (min-width: 1024px) {
+    .redes-sociais li:hover {
+        transform: scale(1.2);
+    }
+
+    .formulario button:hover {
+        transform: scale(1.05);
+    }
+
+    .github:hover {
+        transform: scale(1.2);
+    }
+
+    .foto_perfil:hover {
+        box-shadow: 1px 1px 1em;
+    }
+
+    .certificados:hover {
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .grid-template-areas-1 {
+        grid-template-areas:
+            "grid_1"
+            "grid_pequeno"
+            "grid_2"
+            "grid_3"
+            "grid_form"
+        ;
+    }
+
+    .grid_pequeno {
+        margin: 0;
+        padding: 0;
+    }
+
+    .foto_perfil {
+        width: 40vw;
+        margin-top: 1em;
+    }
+
+    .textao__conteudo,
+    .textao__conteudo_2,
+    .identidade {
+        margin: 1em 0;
+        border-radius: 0;
+        scroll-margin: 3em;
+        padding: 0.5em;
+    }
+
+    .cabecalho {
+        position: relative;
+        justify-content: space-around;
+        padding: 1em 0;
+    }
+
+    .cabecalho__lista {
+        display: none;
+    }
+
+    .textao__titulo {
+        margin: 0;
+        font-size: 2em;
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C;
+        align-items: center;
+        width: 33vw;
+        height: 100vh;
+        position: absolute;
+        left: -100vw;
+        transition: 1s ease-in-out;
+    }
+
+    .menu-lateral button {
+        background-color: var(--preto-fundo);
+    }
+
+
+    .menu-lateral__link {
+        text-align: center;
+        margin: 2em;
+        transition: 0.5s ease-in-out;
+    }
+
+    .menu-lateral--ativo {
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .botao-ativo {
+        display: flex;
+    }
+
+    .menu-lateral__link--inicio::before {
+        content: "\e902";
+        font-size: 1em;
+    }
+
+    .menu-lateral__link--produtos::before {
+        content: "\e900";
+        font-size: 1em;
+    }
+
+    .menu-lateral__link--nos::before {
+        content: "\2665";
+    }
+
+    .menu-lateral__link:hover {
+        color: var(--rosa);
+    }
+
+    .mapa iframe {
+        width: 100%;
+    }
+
+    .formulario {
+        border-radius: 0;
+        margin: 1em 0;
+        font-size: 1em;
+    }
+
+    .conteudo__formacao {
+        flex-direction: column;
+        padding: 0 0.5em;
+    }
+
+    .conteudo__competencias {
+        flex-direction: column;
+    }
+
+
+    .formulario input {
+        width: 80vw;
+        height: 4vh;
+    }
+
+    .formulario input:active {
+        width: 80vw;
+        height: 3vh;
+    }
+
+    .formulario button {
+        width: 80vw;
+        height: 7vh;
+    }
+
+    .titulo__competencias,
+    .titulo__sobre,
+    .titulo__mapa {
+        font-size: 1em;
+    }
+
+    .compt__titulo {
+        font-size: 0.8em;
+    }
+
+    .compt__titulo::before {
+        width: 20px;
+    }
+
+    .compt_dados,
+    .conteudo__sobre,
+    .certificados,
+    .info__moradia {
+        font-size: 0.5em;
+    }
+
+    .instituicao__curso {
+        font-size: 0.8em;
+    }
+
+    .mapa iframe {
+        width: 80vw;
+        border-radius: 20px;
+        height: 40vh;
+    }
+
+    .direitos {
+        font-size: 1em;
+        margin: 1em 0;
+    }
+
+    .github {
+        width: 25px;
+        height: 25px;
+    }
+}

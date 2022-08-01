@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="167.132 118.699 43.401 56.241" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="color-0" bx:pinned="true">
+      <title>rosa</title>
+      <stop style="stop-color: rgb(165, 25, 135);"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true">
+      <title>azul</title>
+      <stop style="stop-color: rgb(0, 122, 204);"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 160.914553, 118.821955)">
+    <path style="fill:#E9E9E0;" d="M36.985,0H7.963C7.155,0,6.5,0.655,6.5,1.926V55c0,0.345,0.655,1,1.463,1h40.074 c0.808,0,1.463-0.655,1.463-1V12.978c0-0.696-0.093-0.92-0.257-1.085L37.607,0.257C37.442,0.093,37.218,0,36.985,0z"/>
+    <polygon style="fill:#D9D7CA;" points="37.5,0.151 37.5,12 49.349,12 &#9;"/>
+    <path style="fill: url(#color-0);" d="M48.037,56H7.963C7.155,56,6.5,55.345,6.5,54.537V39h43v15.537C49.5,55.345,48.845,56,48.037,56z"/>
+    <g/>
+    <g/>
+  </g>
+  <text style="fill: rgb(235, 235, 227); font-family: Candara; font-size: 5.5642px; font-weight: 700; line-height: 7.28404px; text-anchor: middle; white-space: pre;" transform="matrix(2.284099, 0, 0, 1.976924, -213.71561, -160.825015)" x="176.408" y="167.518">HTML</text>
+  <g transform="matrix(1.167127, 0, 0, 1.0855, 179.481234, 130.250109)" style=""/>
+  <text style="fill: url(#color-1); font-family: Candara; font-size: 22px; font-weight: 700; white-space: pre;" x="175.757" y="151.164">&lt;/&gt;</text>
+</svg>
